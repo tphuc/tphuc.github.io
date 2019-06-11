@@ -1,30 +1,34 @@
 import * as types from '../actions/types';
 
-const reducer = (state, action) => {
+const initialState = {
+    isClose : false,
+    content: ''
+}
+const reducer = (state = initialState, action) => {
     switch(action.type){
 
         case types.SUBMIT_ARTICLE:
             return {
                 ...state,
-                editorContent: action.payload.html
+                content: action.payload.html
             }
 
         case types.HTML_EDITOR_CHANGE:
             return {
                 ...state,
-                editorContent: action.payload.html
+                content: action.payload.html
             }
 
         case types.OPEN_EDITOR:
             return {
                 ...state,
-                editorOpen: action.payload.bool
+                editorOpen: true
             }
     
         case types.CLOSE_EDITOR:
             return {
                 ...state,
-                editorOpen: action.payload.bool
+                editorOpen: false
             }
         
         default:
