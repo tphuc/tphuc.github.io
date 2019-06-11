@@ -1,0 +1,14 @@
+a {
+    color: #b36767,
+}
+.b{
+    color: rgb(67, 75, 83)
+}
+nav {
+    background-color: #33323d
+}
+* {
+    margin: 0;
+    /* background-color: rgba(12, 14, 15, 0.075) */
+    /* border: #3c4452 */
+}
