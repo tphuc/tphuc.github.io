@@ -78,7 +78,7 @@ var style = {
 
 function Hero(props) {
     return (
-        <section style={{ ...baseStyle.container, ...baseStyle.responsive, backgroundColor: mainDark }}>
+        <section style={{ ...baseStyle.container, ...baseStyle.responsive, background:'linear-gradient(to bottom, rgba(33,33,33,1) 0%, rgba(33,33,33,1) 12%, rgba(33,33,33,1) 34%, rgba(41,41,41,1) 65%, rgba(51,51,51,1) 100%)' }}>
             <Container >
                 <Row style={style.hero_container} >
                     <Col xs={6} md={6} xl={6} sm={6} lg={6} style={style.hero}>
@@ -110,7 +110,7 @@ const About = () => {
         <Container fluid>
             <Row style={{ ...style.about_container, marginTop: '-5rem'}}>
                 <Col xl={2} lg={2} md={3} sm={5} xs={5} >
-                    <Image src={authorLogo} style={{ border: '3px solid #eceff1' }} roundedCircle fluid />
+                    <Image src={authorLogo} style={{ border: `3px solid ${mainLight}` }} roundedCircle fluid />
                     <h3 className='text-center' style={style.about_name}><strong> PHUC TRAN (FELIX)</strong></h3>
                 </Col>
             </Row>
@@ -125,7 +125,7 @@ const About = () => {
             <Row style={{ ...style.row_section, backgroundColor: mainDark, }}>
                 <hr style={{ border: '2px solid #333333', width: 100 }}></hr>
                 <Row>
-                    <h3 style={{ color: '#e0f2f1' }}><strong>Discover</strong></h3>
+                    <h3 style={{ color: mainLight }}><strong>Discover</strong></h3>
                 </Row>
                 <hr style={{ border: '2px solid #ffffff', width: 100 }}></hr>
                 <Container fluid>

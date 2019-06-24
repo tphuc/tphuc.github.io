@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 import { connect } from 'react-redux';
 import {Button, Modal} from  'react-bootstrap';
 import store from '../redux/store'
-import { htmlEditorChange, closeEditor} from '../redux/actions/index'
+import { htmlEditorChange, closeEditor} from '../redux/actions/editor'
 
 
 
