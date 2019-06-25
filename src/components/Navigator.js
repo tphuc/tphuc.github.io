@@ -4,14 +4,14 @@ import PropTypes from 'prop-types';
 
 
 // appearance 
-import {mainDark, secondaryDark, mainLight, darkDra} from '../static/scripts/color';
+import {mainDark, secondaryDark, mainLight, darkDra, secondaryLight} from '../static/scripts/color';
 import logoBrand from '../static/images/logo_transparent.png';
 
 const style = {
     navItem: {
         fontFamily: 'Roboto',
         borderRadius: 2,
-        color: mainLight,
+        color: secondaryLight,
         marginLeft: 5
     },
     responsive:{
