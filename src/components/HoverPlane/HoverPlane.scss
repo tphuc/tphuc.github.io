@@ -1,0 +1,9 @@
+.hover-plane{
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    min-width: 300px;
+    min-height: 300px;
+    background-color: aliceblue;
+    transition: all 0.2s ;
+    transform: rotateX(0deg) rotateY(0deg);
+}
